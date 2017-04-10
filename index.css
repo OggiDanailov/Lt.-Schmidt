@@ -1,0 +1,70 @@
+html { 
+  background: url(old-sheet.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.title {
+	border: 2px solid;
+	width: 80%;
+	height: 30px;
+	margin: 30px auto;
+}
+.wrapper {
+	width: 90%;
+	height: 700px;
+	border: 2px solid orange;
+	margin: 0 auto;
+
+}
+
+.left {
+	border: 2px solid blue;
+	width: 40%;
+	height: 500px;
+	float: left;
+}
+
+.right {
+	border: 2px solid red;
+	width: 40%;
+	height: 500px;
+	float: left;
+	margin-left: 150px;
+}
+
+.about {
+	border: 2px solid;
+	width: 80%;
+	height: 30px;
+	margin-top: 25px;
+	
+}
+
+.musique {
+	border: 2px solid;
+	width: 80%;
+	height: 30px;
+	margin-top: 75px;
+}
+
+.contact {
+	border: 2px solid;
+	width: 80%;
+	height: 30px;
+	margin-top: 75px;
+}
+
+
+.img {
+	border: 2px solid;
+	width: 80%;
+	height: 400px;
+	margin: 30px 50px;
+	
+}
+
+
