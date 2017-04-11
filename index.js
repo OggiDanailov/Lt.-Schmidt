@@ -1,24 +1,70 @@
-// window.onload = function(){
 
-// 	setTimeout(function(){ document.write('L') }, 1000);	
-// 	setTimeout(function(){ document.write('i') }, 1200);
-// 	setTimeout(function(){ document.write('e') }, 1500);
-// 	setTimeout(function(){ document.write('u') }, 1900);
-// 	setTimeout(function(){ document.write('t') }, 2100);
-// 	setTimeout(function(){ document.write('e') }, 2330);
-// 	setTimeout(function(){ document.write('n') }, 2450);
-// 	setTimeout(function(){ document.write('a') }, 2850);
-// 	setTimeout(function(){ document.write('n') }, 3050);
-// 	setTimeout(function(){ document.write('t') }, 3180);
-// 	setTimeout(function(){ document.write(' ') }, 3480);
+	$(function () {
 
-// 	setTimeout(function(){ document.write('S') }, 3780);
-// 	setTimeout(function(){ document.write('c') }, 3980);
-// 	setTimeout(function(){ document.write('h') }, 4130);
-// 	setTimeout(function(){ document.write('m') }, 4430);
-// 	setTimeout(function(){ document.write('i') }, 4530);
-// 	setTimeout(function(){ document.write('d') }, 4730);
-// 	setTimeout(function(){ document.write('t') }, 4930);
-// }
+	  showTitle(title, "Lieutenant Schmidt", 0, 100  ); 
+
+	  setTimeout(function(){
+	  	showAbout(about, 'About', 0, 1);
+	  }, 8000)
+	  
+	  setTimeout(function(){
+	  showMusic(music, "Music", 0, 100 );
+	}, 11000);
+
+	  setTimeout(function(){
+	  showContact(contact, 'Contact', 0, 10);
+	}, 13800)
+
+		setTimeout(function(){
+			$('#img').addClass('seeIt')
+		}, 14000)  
+
+	});
+
+	var title = document.getElementById('title');
+	var about = document.getElementById('about')
+	var music = document.getElementById('musique');
+	var contact = document.getElementById('contact');
+	var img = document.getElementById('img');
+
+
+		var showTitle = function (target, message, index, interval) {   
+		  if (index < message.length) {
+		    $(target).append(message[index++]);
+		    setTimeout(function () { showTitle(target, message, index, interval); }, Math.random() * 800);
+
+		  }
+		}
+
+
+
+	var showAbout = function (target, message, index, interval) {
+			if (index < message.length) {
+			  $(target).append(message[index++]);  
+			  setTimeout(function () { showAbout(target, message, index, interval); }, Math.random() * 900);
+			}	  	
+	}
+
+	var showMusic = function (target, message, index, interval) {
+			if (index < message.length) {
+			  $(target).append(message[index++]);  
+			  setTimeout(function () { showMusic(target, message, index, interval); }, Math.random() * 700);
+			}		  	
+	}
+
+
+	var showContact = function (target, message, index, interval) {
+			if (index < message.length) {
+			  $(target).append(message[index++]);  
+			  setTimeout(function () { showTitle(target, message, index, interval); }, Math.random() * 600);
+			}
+			
+	}
+	
+
+
+
+
+
 
 

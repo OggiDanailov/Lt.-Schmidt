@@ -1,5 +1,10 @@
+@font-face {
+    font-family: Adler;
+    src: url(Adler.ttf);
+}
+
 html { 
-  background: url(old-sheet.jpeg) no-repeat center center fixed; 
+  background: url(old-sheet.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,28 +13,33 @@ html {
 
 
 .title {
-	border: 2px solid;
+	font-family: Adler;
+	font-size: 30px;
+	
 	width: 80%;
 	height: 30px;
 	margin: 30px auto;
+	text-align: center;
+	/*border: 2px solid;*/
 }
+
 .wrapper {
 	width: 90%;
 	height: 700px;
-	border: 2px solid orange;
+	/*border: 2px solid orange;*/
 	margin: 0 auto;
 
 }
 
 .left {
-	border: 2px solid blue;
+	/*border: 2px solid blue;*/
 	width: 40%;
 	height: 500px;
 	float: left;
 }
 
 .right {
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 	width: 40%;
 	height: 500px;
 	float: left;
@@ -37,34 +47,45 @@ html {
 }
 
 .about {
-	border: 2px solid;
+	font-family: Adler;
+	font-size: 25px;
 	width: 80%;
 	height: 30px;
 	margin-top: 25px;
-	
+	/*border: 2px solid;*/
 }
 
 .musique {
-	border: 2px solid;
+	font-family: Adler;
+	font-size: 25px;
+	
 	width: 80%;
 	height: 30px;
 	margin-top: 75px;
+	/*border: 2px solid;*/
 }
 
 .contact {
-	border: 2px solid;
+	font-family: Adler;
+	font-size: 25px;
+	
 	width: 80%;
 	height: 30px;
 	margin-top: 75px;
+/*	border: 2px solid;*/
 }
 
 
 .img {
-	border: 2px solid;
+	/*border: 2px solid;*/
 	width: 80%;
 	height: 400px;
 	margin: 30px 50px;
+	display: none;
 	
+}
+.seeIt {
+	display: block;
 }
 
 
