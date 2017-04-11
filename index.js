@@ -16,8 +16,10 @@
 	}, 13800)
 
 		setTimeout(function(){
-			$('#img').addClass('seeIt')
-		}, 14000)  
+			// $('#img').addClass('seeIt')
+
+			$("#img:hidden:first").fadeIn(10000);
+		}, 15000)  
 
 	});
 
