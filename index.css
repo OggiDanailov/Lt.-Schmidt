@@ -4,11 +4,35 @@
 }
 
 html { 
-  background: url(old-sheet.jpeg) no-repeat center center fixed; 
+  background: url(old-sheet-updated.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.wrapper {
+	width: 90%;
+	/*height: 700px;*/
+	margin: 0 auto;
+	border: 2px solid orange;
+}
+
+.left {
+	/*border: 2px solid blue;*/
+	width: 40%;
+	height: 500px;
+	float: left;
+	border: 2px solid purple;
+}
+
+.right {
+	/*border: 2px solid red;*/
+	width: 40%;
+	height: 500px;
+	float: left;
+	margin-left: 150px;
+	border: 2px solid ;
 }
 
 
@@ -23,27 +47,9 @@ html {
 	/*border: 2px solid;*/
 }
 
-.wrapper {
-	width: 90%;
-	height: 700px;
-	/*border: 2px solid orange;*/
-	margin: 0 auto;
-
-}
-
-.left {
-	/*border: 2px solid blue;*/
-	width: 40%;
-	height: 500px;
-	float: left;
-}
-
-.right {
-	/*border: 2px solid red;*/
-	width: 40%;
-	height: 500px;
-	float: left;
-	margin-left: 150px;
+.decor {
+	text-decoration: none;
+	color: black;
 }
 
 .about {
@@ -53,6 +59,7 @@ html {
 	height: 30px;
 	margin-top: 25px;
 	/*border: 2px solid;*/
+
 }
 
 .musique {
@@ -78,14 +85,35 @@ html {
 
 .img {
 	/*border: 2px solid;*/
-	width: 70%;
-	height: 250px;
-	margin: 30px 50px;
+	width: 80%;
+	height: 350px;
+	margin-left: 130px;
 	display: none;
-	
 }
-/*.seeIt {
-	display: block;
+
+img {
+	border: 3px solid orange;
+	border-radius: 5%;
+}
+
+/*@media screen and (max-width: 1024px){
+	.right {
+		border: 2px solid green;
+	}
+	.img {
+		margin-left: 20px;
+	}
+} 
+
+@media screen and (max-width: 768px){
+	.right {
+		border: 2px solid blue;
+
+	}
+	.img {
+		margin-left: 0px;
+	}
+
 }*/
 
 
