@@ -1,0 +1,21 @@
+.wrapper {
+	border: 2px solid ;
+	display: inline-block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.stereo {
+	border: 2px solid green;
+	display: inline-block;
+}
+
+
+.play, .pause, .next {
+	width: 55px;
+	height: 20px;
+	border:3px solid black;
+	background-color: yellow;
+	display: inline-block;
+	margin: 10px;
+}
