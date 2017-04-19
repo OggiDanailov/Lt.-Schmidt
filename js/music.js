@@ -5,16 +5,25 @@ var play1 = document.getElementById('play1')
 var pause1 = document.getElementById('pause1')
 
 
-function play(){
+
+
+var jukebox = new Jukebox()
+
+
+play1.addEventListener('click', jukebox.play)
+pause1.addEventListener('click', jukebox.pause)
+
+function Jukebox(play, pause){
+	this.play = function(){
 	audio.src = array[0];
 	audio.play()
-}
-
-function pause() {
+	},
+	this.pause = function() {
 	audio.src = array[0];
 	audio.pause()
+	} 
+
+
+
 }
 
-
-play1.addEventListener('click', play)
-pause1.addEventListener('click', pause)
