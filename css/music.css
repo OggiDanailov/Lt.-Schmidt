@@ -1,17 +1,19 @@
 .wrapper {
 	border: 2px solid ;
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
 	width: 80%;
+
 }
 
 .stereo {
-	border: 2px solid green;
+	border: 4px solid green;
+	margin: 0 auto;
 	display: inline-block;
 }
 
 
-.play, .pause, .next {
+.play, .pause, .next, .previous {
 	width: 55px;
 	height: 20px;
 	border:3px solid black;
