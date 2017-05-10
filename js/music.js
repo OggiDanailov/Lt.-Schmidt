@@ -1,6 +1,8 @@
 var audio = new Audio;
 
-
+// var play1 = document.getElementById('play1')
+// var pause1 = document.getElementById('pause1')
+// var next1 = document.getElementById('next1')
 var songList = document.getElementById('songList')
 
 var jukebox = new Jukebox()
@@ -72,7 +74,12 @@ function Jukebox(){
 
 function play(){
 	audio.src = songs[currentSong].fileName;
+	
+	
 	audio.play()
+	setTimeout(function(){
+		audio.duration
+	}, 100)
 }
 
 function stop() {

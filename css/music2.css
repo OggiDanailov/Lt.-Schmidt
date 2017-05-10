@@ -1,0 +1,85 @@
+@font-face {
+    font-family: Adler;
+    src: url(../fonts/Adler.ttf);
+}
+
+
+html { 
+  background: url(../img/old-sheet.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 400px;
+	margin: 30px auto;
+	font-family: Adler;
+	border-bottom: 3px solid;
+	height: 50px;
+}
+
+.stereo {
+	float: left;
+	width: 30%;
+	min-width: 250px;
+	margin: 10px auto;
+	/*border-bottom: 2px solid black;*/
+}
+
+.button {
+	float: left;
+	margin-right: 10px;
+}
+
+#timeline{
+	width: 500px;
+	height: 12px;
+	background: black;
+	margin: 40px auto;
+	/*float: left;*/
+	border-radius: 15px;
+}
+
+#playhead{
+	width: 12px;
+	height: 28px;
+	/*border-radius: 50%;*/
+	margin-top: -8px;
+	background-color: black;
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 480px){
+	
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+	
+}
+
+@media all and (min-width: 769px){
+	
+}
+
+
