@@ -32,7 +32,7 @@ $(document).ready(function() {
   for (i=0;i<songs.length;i++) {
     var song = document.createElement("h3");
     song.innerText = songs[i].name;
-    songList.parentNode.insertBefore(song, songList);
+    songList.appendChild(song, songList);
   }
   songStrings = [];
   var songNames = $("h3");
@@ -45,6 +45,7 @@ $(document).ready(function() {
   $("h3").click(function() {
     currentSong = songStrings.indexOf(this.innerText);
     jukebox.play();
+    jukebox.timeLineRepresentation()
   })
 })
 

@@ -53,6 +53,18 @@ html {
 	background-color: black;
 	position: absolute;
 }
+h3 {
+	font-family: Adler;
+	padding: 10px;
+}
+
+#songList {
+	border: 2px dashed;
+	width: 60%;
+	height: 700px;
+	margin: 0 auto;
+
+}
 
 
 
