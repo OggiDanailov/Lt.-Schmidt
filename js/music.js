@@ -26,35 +26,41 @@ var snowflakes = new Song('snowflakes', 'audio/snowflakes.mp3')
 
 var songs = [jorge, run, ukulele, extension, blues, arabesque, eye, siberia, snowflakes]
 
-
-
 $(document).ready(function() {
   for (i=0;i<songs.length;i++) {
     var song = document.createElement("h3");
     song.innerText = songs[i].name;
     songList.appendChild(song, songList);
   }
+
+
+
   songStrings = [];
   var songNames = $("h3");
 
   $.each(songNames, function(index, value) {
     songStrings.push(value.innerText)
-    // console.log(songStrings)
   });
+  
+  
 
   $("h3").click(function() {
     currentSong = songStrings.indexOf(this.innerText);
+    // this should be fixed!!!!! !!!!! !!!!!!!!! !!!!! !!!! 
+    // this should be fixed!!!!! !!!!! !!!!!!!!! !!!!! !!!! 
+    	changeColor(currentSong)
     jukebox.play();
     jukebox.timeLineRepresentation()
   })
 })
+ function changeColor(song){
+ 	h3 = document.getElementsByTagName('h3')
+ 	h3[song].style.color = 'brown'
+ }
 
-
-function Song(name, fileName, art){
+function Song(name, fileName){
 	this.name = name;
 	this.fileName = fileName;
-	this.art = art;
-	
 }
 
 function Jukebox(){
@@ -68,24 +74,27 @@ function Jukebox(){
 }
 
 
-function play(){
-	audio.src = songs[currentSong].fileName;	
-	
+function play(){	
+	changeColor(currentSong)
+	audio.src = songs[currentSong].fileName;
 		audio.play()
-
 	setTimeout(function(){
 		audio.duration
 	}, 100)
 }
 
+
+
 function stop() {
+	changeColorBack(currentSong)
 	audio.src = songs[currentSong].fileName;
 	audio.pause()
-	// console.log(currentSong)
 }
 
-
-
+function changeColorBack(song){
+	h3 = document.getElementsByTagName('h3')
+ 	h3[song].style.color = 'black'
+}
 
 function next(){
 	 	if(currentSong == songs.length - 1){
@@ -118,12 +127,10 @@ function random(x, y){
 	currentSong = Math.floor(Math.random()* (songs.length-1 * 0)) + 0;
 	audio.src = songs[currentSong].fileName;
 	audio.play()
-	// console.log(currentSong)
 }
 
 function timeLineRepresentation(){
 		var totalLength = timeline.offsetWidth - playhead.offsetWidth
-// console.log(totalLength)
 		audio.addEventListener('timeupdate', timeUpdate)
 
 		audio.addEventListener("canplaythrough", function() {
@@ -135,7 +142,6 @@ function timeLineRepresentation(){
 		   audio.currentTime = duration * clickPercent(event);
 		}, false);
 
-		// returns click as decimal (.77) of the total timelineWidth
 		function clickPercent(event) {
 		    return (event.clientX - getPosition(timeline)) / totalLength;
 
@@ -163,7 +169,6 @@ function timeLineRepresentation(){
 		        pButton.className = "play";
 		    }
 		}
-
 
 
 		function getPosition(el) {
