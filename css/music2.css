@@ -55,7 +55,9 @@ html {
 }
 h3 {
 	font-family: Adler;
-	padding: 10px 10px 0px 20px;
+	padding: 10px 0px 0px 20px;
+	/*border:2px solid green;*/
+
 }
 
 #songList {
@@ -64,6 +66,20 @@ h3 {
 	height: 700px;
 	margin: 0 auto;
 
+}
+
+
+.songWrapperLeft {
+	border: 2px solid red;
+	width: 48%;
+	float: left;
+	/*margin: 0 auto;*/
+}
+
+.songWrapperRight {
+	border: 2px solid orange;
+	width: 49%;
+	float: left;
 }
 
 

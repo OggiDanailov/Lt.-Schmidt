@@ -4,6 +4,7 @@ var play1 = document.getElementById('play1')
 var pause1 = document.getElementById('pause1')
 var next1 = document.getElementById('next1')
 var songList = document.getElementById('songList')
+var songWrapperLeft = document.getElementById('songWrapperLeft')
 
 var jukebox = new Jukebox()
 
@@ -24,15 +25,27 @@ var eye = new Song('eye', 'audio/eye convergence.mp3')
 var siberia = new Song('siberia', 'audio/siberia.mp3')
 var snowflakes = new Song('snowflakes', 'audio/snowflakes.mp3')
 
+var ferdinand = new Song('Ferdinand', 'audio/Fredinand.wav')
+var jean = new Song('Jean', 'audio/Jean.wav')
+var mandarin = new Song('Mandarin', 'audio/Mandarin.wav')
+var panair = new Song('Panair', 'audio/panair.wav')
+var second = new Song('Second', 'audio/Second.wav')
+
 var songs = [jorge, run, ukulele, extension, blues, arabesque, eye, siberia, snowflakes]
+var songs2 = [ferdinand, jean, mandarin, panair, second]
 
 $(document).ready(function() {
   for (i=0;i<songs.length;i++) {
     var song = document.createElement("h3");
     song.innerText = songs[i].name;
-    songList.appendChild(song, songList);
+    songWrapperLeft.appendChild(song, songWrapperLeft);
   }
 
+  for (i=0;i<songs2.length;i++) {
+    var song = document.createElement("h3");
+    song.innerText = songs2[i].name;
+    songWrapperRight.appendChild(song, songWrapperRight);
+  }
 
 
   songStrings = [];
@@ -46,8 +59,6 @@ $(document).ready(function() {
 
   $("h3").click(function() {
     currentSong = songStrings.indexOf(this.innerText);
-    // this should be fixed!!!!! !!!!! !!!!!!!!! !!!!! !!!! 
-    // this should be fixed!!!!! !!!!! !!!!!!!!! !!!!! !!!! 
     	changeColor(currentSong)
     jukebox.play();
     jukebox.timeLineRepresentation()
