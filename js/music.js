@@ -51,6 +51,7 @@ $(document).ready(function() {
   songStrings = [];
   var songNames = $("h3");
 
+
   $.each(songNames, function(index, value) {
     songStrings.push(value.innerText)
   });
@@ -87,6 +88,9 @@ function Jukebox(){
 
 function play(){	
 	changeColor(currentSong)
+	for(var i=0;i<songs2.length;i++){
+		songs.push(songs2[i])	
+	}
 	audio.src = songs[currentSong].fileName;
 		audio.play()
 	setTimeout(function(){
