@@ -30,9 +30,13 @@ var jean = new Song('Jean', 'audio/Jean.wav')
 var mandarin = new Song('Mandarin', 'audio/Mandarin.wav')
 var panair = new Song('Panair', 'audio/panair.wav')
 var second = new Song('Second', 'audio/Second.wav')
+var convergence = new Song('Convergence', 'audio/convergence.wav')
+var darky = new Song('Darky', 'audio/darky.wav')
+var echoes = new Song('Echoes', 'audio/Echoes.wav')
+var organ = new Song('Organ', 'audio/organ.wav')
 
 var songs = [jorge, run, ukulele, extension, blues, arabesque, eye, siberia, snowflakes]
-var songs2 = [ferdinand, jean, mandarin, panair, second]
+var songs2 = [ferdinand, jean, mandarin, panair, second, convergence, darky, echoes, organ]
 
 $(document).ready(function() {
   for (i=0;i<songs.length;i++) {
