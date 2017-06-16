@@ -4,28 +4,100 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/contact.css">
+<link rel="stylesheet" type="text/css" href="css/about.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
 </script>
 </head>
 <body>
 
+	<nav class="computer">
+	    <div class="container-nav">
+	        <ul>
+	            <li><a class='decoration' href="about.html">About</a></li>
+	            <li><a class='decoration' href="music2.html">Audio</a></li>
+	            <li><a class='decoration' href="contact.html">Contact</a></li>    
+	        </ul>
+	    </div>
+	</nav>
 
+<!-- this page requires to run this: python -m SimpleHTTPServer 8000 -->
 
-<div id="formview"><form method="POST" action="http://formspree.io/ogidan@abv.bg">
-  <input type="email"  placeholder="Your email" name="_replyto">
-  <textarea name="message" placeholder="Your message"></textarea>
-  <button type="submit" value="Send">Send</button>
-</form></div>
-
+<div class='wrapper'>
+	<div id="formview">
+		<form method="POST" action="http://formspree.io/ogidan@abv.bg">
+	  		<input type="email"  placeholder="Your email" name="_replyto">
+	  		<textarea name="message" placeholder="Your message"></textarea>
+	  		<button type="submit" value="Send">Send</button>
+		</form>
+	</div>
+</div>
 <style>
 
-#formview {
-	display:inline-block;
-	border:2px solid orange;
-	height: 200px;
+@font-face {
+    font-family: Adler;
+    src: url(../fonts/Adler.ttf);
+}
+
+.wrapper {
+	width: 60%;
+	border:2px dashed;
+	margin: 20px auto;
+	box-shadow: 15px 15px 12px teal;
 	
 }
 
+#formview {
+	/*display:inline-block;*/
+	/*border:6px solid orange;*/
+	height: 400px;
+	margin: 10px auto;
+
+	
+}
+
+input[type=email] {
+	font-family: Adler;
+	height: 30px;
+  border: 1px dashed black;
+  /*border-radius: 4%;*/
+  background-color: #F6D494;
+  margin-left: 50px;
+display: block;
+margin: 30px auto;
+box-shadow: 5px 5px 12px teal;
+font-size: 18px;
+}
+input::placeholder {
+	color: black;
+}
+textarea::placeholder {
+	color: black;
+}
+
+textarea {
+	font-family: Adler;
+	border: 1px dashed;
+	width: 400px;
+	height: 150px;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 5px 5px 12px teal;
+	background-color: #F6D494;
+	font-size: 18px;
+}
+
+button[type=submit] {
+	font-family: Adler;
+	font-size: 18px;
+	width: 100px;
+	height: 30px;
+	margin: 20px auto;
+	background-color: #F6D494;
+	border: 1px dashed;
+	display: block;
+	box-shadow: 5px 5px 12px teal;
+
+}
 
 
 </style>

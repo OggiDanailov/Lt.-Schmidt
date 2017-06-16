@@ -28,6 +28,7 @@ html {
 	width: 50%;
 	min-width: 250px;
 	margin: 10px auto;
+
 	/*border-bottom: 2px solid black;*/
 }
 
@@ -43,6 +44,7 @@ html {
 	margin: 40px auto;
 	/*float: left;*/
 	border-radius: 15px;
+	
 }
 
 #playhead{
@@ -65,39 +67,40 @@ h3 {
 	width: 60%;
 	height: 700px;
 	margin: 0 auto;
+	box-shadow: 10px 10px 10px teal;
 
 }
 
 
 .songWrapperLeft {
-	border: 2px solid red;
+	border-right: 2px dashed;
 	width: 48%;
 	float: left;
 	/*margin: 0 auto;*/
 }
 
 .songWrapperRight {
-	border: 2px solid orange;
+	/*border: 2px solid orange;*/
 	width: 49%;
 	float: left;
 	/*margin: 0 auto;*/
 }
 
+.videoList {
+	width: 100%;
+	border-bottom: 2px dashed;
+	height: 50px;
+	margin-top: 500px;
+	box-shadow: 10px 10px 10px teal;
+	
+}
+.videoList h3 {
+	display: inline;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.h3Right {
+	margin-left: 30%;
+}
 
 @media all and (max-width: 480px){
 	
