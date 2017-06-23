@@ -205,40 +205,42 @@ function timeLineRepresentation(){
 
 // this is the video
 
-// var theater = document.getElementById('theater')
-// var vid = document.getElementById('myVideo')
+var theater = document.getElementById('theater')
+var vid = document.getElementById('myVideo')
 
-// var video = new Video();
+var video = new Video();
 
 // theater.addEventListener('click', video.play)
 // theater.addEventListener('click', video.pause)
-// theater.addEventListener('click', video.changeVisibility)
+theater.addEventListener('click', video.changeVisibility)
 
 
 
-// function Video(){
-// 	this.play = playVideo;
-// 	this.pause = pauseVideo;
-// 	this.changeVisibility = changeVisibility;
-// }
+function Video(){
+	this.play = playVideo;
+	this.pause = pauseVideo;
+	this.changeVisibility = changeVisibility;
+}
 
 
-// function playVideo(){
-// 	console.log(vid)
-// 	vid.play()
-// }
+function playVideo(){
+	console.log(vid)
+	vid.play()
+}
 
-// function pauseVideo(){	
-// 	vid.pause()
-// }
+function pauseVideo(){	
+	vid.pause()
+}
 
-// function changeVisibility(){
+function changeVisibility(){
 	
-// 	if(vid.style.display === 'none'){
-// 		vid.style.display = 'block'
-// 	}else
-// 	vid.style.display = 'none'
-// }
+ $("body").animate({"scrollTop": window.scrollY+300}, 1500);
+
+	if(vid.style.display === 'block'){
+		vid.style.display = 'none'
+	}else
+	vid.style.display = 'block'
+}
 
 
 

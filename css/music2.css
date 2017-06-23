@@ -17,7 +17,11 @@ html {
 	display: none;
 	width: 80%;
 	height: 300px;
-	margin: 0 auto;
+	margin: 650px auto;
+}
+
+controls{
+	background-color: red;
 }
 
 
@@ -107,12 +111,13 @@ h3 {
 }
 
 
-.theater, .h3Right  {
+.theater  {
 	/*border: 2px solid purple;*/
 	text-align: center;
-	margin: 30px;
-	padding: 30px;
+	margin: 50px;
+	padding: 50px;
 	display: inline;
+
 }
 
 
