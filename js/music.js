@@ -96,10 +96,12 @@ function play(){
 		songs.push(songs2[i])	
 	}
 	audio.src = songs[currentSong].fileName;
+
 		audio.play()
 	setTimeout(function(){
 		audio.duration
 	}, 100)
+
 }
 
 
@@ -109,6 +111,7 @@ function stop() {
 	audio.src = songs[currentSong].fileName;
 	audio.pause()
 }
+
 
 function changeColorBack(song){
 	h3 = document.getElementsByTagName('h3')
@@ -165,6 +168,7 @@ function timeLineRepresentation(){
 		    return (event.clientX - getPosition(timeline)) / totalLength;
 
 		}
+		
 
 		function moveplayhead(event) {
 		    var newMargLeft = event.clientX - getPosition(timeline);
@@ -173,20 +177,22 @@ function timeLineRepresentation(){
 		        playhead.style.marginLeft = newMargLeft + "px";
 		    }
 		    if (newMargLeft < 0) {
-		        playhead.style.marginLeft = "0px";
+		        playhead.style.marginLeft = "0px";		     
 		    }
 		    if (newMargLeft > totalLength) {
 		        playhead.style.marginLeft = totalLength + "px";
 		    }
+
 		}
 
 		function timeUpdate() {
 		    var playPercent = totalLength * (audio.currentTime / duration);
 		    playhead.style.marginLeft = playPercent + "px";
-		    if (audio.currentTime == duration) {
-		        pButton.className = "";
-		        pButton.className = "play";
+		    
+		    if(playhead.style.marginLeft === totalLength+ 'px'){
+		    	next()
 		    }
+		    
 		}
 
 
@@ -194,4 +200,45 @@ function timeLineRepresentation(){
 		    return el.getBoundingClientRect().left;
 		}
 }
+
+
+
+// this is the video
+
+// var theater = document.getElementById('theater')
+// var vid = document.getElementById('myVideo')
+
+// var video = new Video();
+
+// theater.addEventListener('click', video.play)
+// theater.addEventListener('click', video.pause)
+// theater.addEventListener('click', video.changeVisibility)
+
+
+
+// function Video(){
+// 	this.play = playVideo;
+// 	this.pause = pauseVideo;
+// 	this.changeVisibility = changeVisibility;
+// }
+
+
+// function playVideo(){
+// 	console.log(vid)
+// 	vid.play()
+// }
+
+// function pauseVideo(){	
+// 	vid.pause()
+// }
+
+// function changeVisibility(){
+	
+// 	if(vid.style.display === 'none'){
+// 		vid.style.display = 'block'
+// 	}else
+// 	vid.style.display = 'none'
+// }
+
+
 

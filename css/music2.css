@@ -10,6 +10,14 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: Adler;
+}
+
+#myVideo {
+	display: none;
+	width: 80%;
+	height: 300px;
+	margin: 0 auto;
 }
 
 
@@ -19,7 +27,7 @@ html {
 	max-width: 700px;
 	margin: 30px auto;
 	font-family: Adler;
-	border-bottom: 2px solid;
+	/*border-bottom: 2px solid;*/
 	height: 50px;
 }
 
@@ -55,6 +63,7 @@ html {
 	background-color: black;
 	position: absolute;
 }
+
 h3 {
 	font-family: Adler;
 	padding: 10px 0px 0px 20px;
@@ -63,23 +72,27 @@ h3 {
 }
 
 #songList {
-	border: 2px dashed;
 	width: 60%;
-	height: 700px;
-	margin: 0 auto;
+	margin: 20px auto;
+	height: 500px;
 	box-shadow: 10px 10px 10px teal;
+	/*border: 2px dashed;*/
+	padding-bottom: 20px;
 
+	
 }
 
 
 .songWrapperLeft {
-	border-right: 2px dashed;
+	/*box-shadow: 10px 10px 10px teal;*/
+	/*border-right: 2px dashed;*/
 	width: 48%;
 	float: left;
 	/*margin: 0 auto;*/
 }
 
 .songWrapperRight {
+	/*box-shadow: 10px 10px 10px teal;*/
 	/*border: 2px solid orange;*/
 	width: 49%;
 	float: left;
@@ -87,20 +100,21 @@ h3 {
 }
 
 .videoList {
-	width: 100%;
-	border-bottom: 2px dashed;
-	height: 50px;
-	margin-top: 500px;
-	box-shadow: 10px 10px 10px teal;
-	
+	text-align: center;
+	margin-top: 130px;
+/*	border:2px solid;*/
+
 }
-.videoList h3 {
+
+
+.theater, .h3Right  {
+	/*border: 2px solid purple;*/
+	text-align: center;
+	margin: 30px;
+	padding: 30px;
 	display: inline;
 }
 
-.h3Right {
-	margin-left: 30%;
-}
 
 @media all and (max-width: 480px){
 	
@@ -113,5 +127,7 @@ h3 {
 @media all and (min-width: 769px){
 	
 }
+
+
 
 
