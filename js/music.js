@@ -234,7 +234,7 @@ function pauseVideo(){
 
 function changeVisibility(){
 	
- $("body").animate({"scrollTop": window.scrollY+300}, 1500);
+ $("body").animate({"scrollTop": window.scrollY+350}, 1500);
 
 	if(vid.style.display === 'block'){
 		vid.style.display = 'none'

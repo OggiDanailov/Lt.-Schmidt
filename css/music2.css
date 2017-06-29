@@ -15,15 +15,22 @@ html {
 
 #myVideo {
 	display: none;
-	width: 80%;
+	width: 35%;
 	height: 300px;
 	margin: 650px auto;
 }
 
-controls{
-	background-color: red;
+video::-webkit-media-controls-panel{
+	background-color: #F6D494;
 }
 
+video::-webkit-media-controls-volume-slider {
+	background-color: teal;
+}
+
+video::-webkit-media-controls-timeline{
+	background-color: teal;
+}
 
 .wrapper {
 	display: flex;
@@ -105,14 +112,16 @@ h3 {
 
 .videoList {
 	text-align: center;
-	margin-top: 130px;
-/*	border:2px solid;*/
+	margin-top: -70px;
+	margin-left: 300px;
+	
+	/*border:2px solid;*/
 
 }
 
 
 .theater  {
-	/*border: 2px solid purple;*/
+	/*/*border: 2px solid purple;*/
 	text-align: center;
 	margin: 50px;
 	padding: 50px;
