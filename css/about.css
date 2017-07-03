@@ -6,35 +6,50 @@ html {
   background-size: cover;
 }
 
+
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	/*max-width: 400px;*/
+	/*height: 700px;*/
+	/*margin: 0 auto;*/
+	/*border: 4px solid orange;*/
+	
+}
+
 @font-face {
     font-family: Adler;
     src: url(../fonts/Adler.ttf);
 }
 
-.computer {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 1200px;
-	height: 120px;
-	/*border: 2px dashed;*/
-}
 
-.container-nav {
-	width: 50%;
-	min-width: 700px;
-	height: 100px;
+
+.computer {
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	width: 90%;
+	height: 40px;
 	margin: 0 auto;
 	text-shadow: 2px 2px grey;
-	/*border: 2px dashed;*/
+	border-bottom: 2px dashed;
+	border-right: 2px dashed;
+	margin-bottom: 20px;
 	box-shadow: 10px 10px 10px teal;
 }
 
 li {
-	float: left;
-	margin: 20px;
-	font-family: Adler;
-	font-size: 2em;
 
+	float: left;
+	/*margin: 20px;*/
+	font-family: Adler;
+	font-size: 20px;
+	/*border: 1px solid red;*/
+	/*margin-left: -10px;
+	margin-right: 49px;*/
+	line-height: 10px;
 	list-style-type: none;
 	color: black;
 }
